@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import '../api_service.dart';
 
 class ImageGenerationScreen extends StatefulWidget {
+  const ImageGenerationScreen({super.key});
+
   @override
   _ImageGenerationScreenState createState() => _ImageGenerationScreenState();
 }

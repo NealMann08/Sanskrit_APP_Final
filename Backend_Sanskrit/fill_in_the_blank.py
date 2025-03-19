@@ -16,7 +16,8 @@ def generate_fill_in_the_blank():
             {"role": "system", "content": "You are a Sanskrit teacher."},
             {
                 "role": "user",
-                "content": f"""Generate one beginner-level fill-in-the-blank Sanskrit exercise.
+                "content": f"""
+                Generate one beginner-level fill-in-the-blank Sanskrit exercise.
                 The exercise should not be any of the following sentences: [{used_sentence_str}].
                 Do not provide the English translation at all.
                 Use this structure and replace the [Verb] or [Object] with a blank:

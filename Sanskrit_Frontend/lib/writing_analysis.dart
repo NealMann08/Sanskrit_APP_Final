@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import '../api_service.dart';
 
 class WritingAnalysisScreen extends StatefulWidget {
+  const WritingAnalysisScreen({super.key});
+
   @override
   _WritingAnalysisScreenState createState() => _WritingAnalysisScreenState();
 }

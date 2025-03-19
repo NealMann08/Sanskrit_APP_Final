@@ -24,7 +24,7 @@ def fill_in_the_blank():
     result = generate_fill_in_the_blank()
     return jsonify(result)
 
-@app.route('/generate-image', methods=['POST'])
+@app.route('/generate-image', methods=['GET'])
 def image_generation():
     data = request.get_json()
     prompt = data.get("prompt", "")
@@ -32,7 +32,7 @@ def image_generation():
     image_url, options, correct_answer = generate_image(client, prompt)
     return jsonify({"image_url": image_url, "options": options, "correct_answer": correct_answer})
 
-@app.route('/writing-analysis', methods=['POST'])
+@app.route('/writing-analysis', methods=['GET'])
 def writing_analysis():
     data = request.get_json()
     text = data.get("text", "")
